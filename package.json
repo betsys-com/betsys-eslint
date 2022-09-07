@@ -1,0 +1,18 @@
+{
+  "name": "betsys-eslint",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "nx": "14.6.5",
+    "@nrwl/cli": "14.6.5",
+    "@nrwl/workspace": "14.6.5",
+    "typescript": "~4.7.2",
+    "prettier": "^2.6.2"
+  },
+  "workspaces": [
+    "packages/**"
+  ]
+}
