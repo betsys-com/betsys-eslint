@@ -5,7 +5,7 @@
   "scripts": {
     "build:all": "nx run-many --target=build",
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish"
+    "lerna": "lerna"
   },
   "private": true,
   "devDependencies": {
