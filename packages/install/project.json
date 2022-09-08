@@ -1,0 +1,8 @@
+{
+  "root": "packages/install",
+  "sourceRoot": "packages/install/src",
+  "projectType": "library",
+  "build": {
+    "outputs": ["dist"]
+  }
+}

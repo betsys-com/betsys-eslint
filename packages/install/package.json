@@ -1,0 +1,40 @@
+{
+  "name": "@betsys-eslint/install",
+  "version": "0.0.1",
+  "description": "Package installer for ESLint configurations and plugins that installs the peer dependencies of the package and the package itself.",
+  "main": "dist/cli.min.js",
+  "bin": {
+    "betsys": "dist/cli.min.js"
+  },
+  "scripts": {
+    "test": "test",
+    "build": "rollup -c"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betsys-com/betsys-eslint.git"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "keywords": [
+    "eslint installer",
+    "eslint config installer",
+    "eslint plugin installer",
+    "betsys eslint installer",
+    "peer dependecy installer",
+    "eslint peer dependencies",
+    "auto install peer dependecies"
+  ],
+  "author": "Betsys, s.r.o. <code@betsys.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betsys-com/betsys-eslint/issues"
+  },
+  "homepage": "https://github.com/betsys-com/betsys-eslint/tree/main/packages/install#readme",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}
