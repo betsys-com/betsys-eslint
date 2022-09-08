@@ -32,3 +32,20 @@ npx @betsys-eslint/install plugin PLUGIN_NAME
 # Example
 npx @betsys-eslint/install plugin angular-template-spacing
 ```
+
+#### Command details
+```bash
+npx @betsys-eslint/install TYPE NAME INSTALL_DIR
+```
+
+Parameters:
+- TYPE (required)
+  - either `config` or `plugin`
+- NAME (required)
+  - when `TYPE` is `config`, name of the config package without `@betsys-eslint/eslint-config` prefix
+  - when `TYPE` is `plugin`, name of the plugin package without `@betsys-eslint/eslint-plugin` prefix
+- INSTALL_DIR (optional)
+  - path to directory with `package.json` file (relative or absolute)
+  - defaults to current directory
+
+
