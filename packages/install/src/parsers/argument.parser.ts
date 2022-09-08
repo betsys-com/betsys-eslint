@@ -1,4 +1,5 @@
-import { argv } from 'process';
+import { resolve } from 'path';
+import * as process from 'process';
 import { Parser } from '@package/install/models/parser.model';
 import { Arguments } from '@package/install/models/argument.model';
 import { PackageType } from '@package/install/models/package.model';
@@ -6,7 +7,7 @@ import { ArgumentValidationError } from '@package/install/errors/argument-valida
 
 export class ArgumentParser implements Parser<Arguments> {
   parse(): Arguments {
-    const args = argv.slice(2);
+    const args = process.argv.slice(2);
     const type = args[0];
     if (!this.isCorrectPackageType(type)) {
       throw new ArgumentValidationError('type', type);
@@ -14,10 +15,13 @@ export class ArgumentParser implements Parser<Arguments> {
 
     const name = args[1];
     if (!name) {
-      throw new ArgumentValidationError('name', type);
+      throw new ArgumentValidationError('name', name);
     }
 
-    return { type, name };
+    const cwd = args[2] ?? process.cwd();
+    const path = resolve(cwd.endsWith('/') ? cwd : (cwd + '/'));
+
+    return { type, name, path };
   }
 
   private isCorrectPackageType(packageType: string): packageType is PackageType {
