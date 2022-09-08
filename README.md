@@ -8,7 +8,12 @@
 <h1 align="center">Betsys ESLint</h1>
 <p align="center">Monorepo for all the ESLint tooling we use on our day-to-day basis in Betsys :fire:</p>
 
----
+<p align="center">
+  <img alt="npm" src="https://img.shields.io/npm/v/@betsys-eslint/install">
+  <img alt="Github lerna version" src="https://img.shields.io/github/lerna-json/v/betsys-com/betsys-eslint">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/main">
+  <img alt="Codecov" src="https://img.shields.io/codecov/c/github/betsys-com/betsys-eslint">
+</p>
 
 Click on a specific configuration of a plugin to get the Quick Start guide.
 
