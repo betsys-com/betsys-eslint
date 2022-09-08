@@ -1,7 +1,7 @@
 {
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "betsys-eslint",
+  "npmScope": "@betsys-eslint",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",

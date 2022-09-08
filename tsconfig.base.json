@@ -1,20 +1,22 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "esnext",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["esnext", "dom"],
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {}
+    "skipDefaultLibCheck": true
   },
   "exclude": ["node_modules", "tmp"]
 }
