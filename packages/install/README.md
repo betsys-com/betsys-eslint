@@ -5,7 +5,7 @@
     <img width="200px" alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://user-images.githubusercontent.com/19550608/189107408-a7845b2c-1256-4489-8de5-2891b60f7b16.svg">
   </picture>
 </p>
-<h1 align="center">@betsys-eslint/install-config</h1>
+<h1 align="center">@betsys-eslint/install</h1>
 <p align="center">Installer for our ESLint configurations and plugins</p>
 
 ---
