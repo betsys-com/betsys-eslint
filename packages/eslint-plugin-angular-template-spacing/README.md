@@ -15,10 +15,17 @@ Angular ESLint configured
 
 ## Quick Start
 
+#### Installing automatically
 To install the configuration, we recommend using our [installation script](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
 which also installs the needed peer dependencies automatically.
 ```bash
 npx @betsys-eslint/install plugin angular-template-spacing
+```
+
+#### Installing manually
+You can install the plugin without using the installation script above, see the following:
+```bash
+npm install --save-dev @betsys-eslint/eslint-plugin-angular-template-spacing
 ```
 
 after installation, add the configuration to you ESLint config:

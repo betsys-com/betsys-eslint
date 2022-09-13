@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist/tsc-out",
+    "types": ["node"],
+    "sourceMap": false,
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@package/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts"]
+}

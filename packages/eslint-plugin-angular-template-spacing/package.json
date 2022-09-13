@@ -1,0 +1,68 @@
+{
+  "name": "@betsys-eslint/eslint-plugin-angular-template-spacing",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Betsys, s.r.o. <code@betsys.com>",
+  "description": "Plugin that offers spacing possibilities in Angular's templates using ESLint",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint",
+    "build": "rollup -c"
+  },
+  "files": [
+    "LICENSE",
+    "dist"
+  ],
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.29.0"
+  },
+  "peerDependencies": {
+    "@angular-eslint/eslint-plugin-template": ">= 12.0.0",
+    "@angular-eslint/template-parser": ">= 12.0.0",
+    "@angular/compiler": ">= 12.0.0",
+    "eslint": "^8.0.0"
+  },
+  "devDependencies": {
+    "@angular-eslint/eslint-plugin": "^14.0.3",
+    "@angular-eslint/eslint-plugin-template": "^14.0.3",
+    "@angular-eslint/template-parser": "^14.0.3",
+    "@angular/compiler": "^14.0.3",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-typescript": "^8.4.0",
+    "@types/eslint": "^8.4.6",
+    "@types/jest": "^29.0.0",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "~8.22.0",
+    "eslint-plugin-angular-template-spacing": "file:",
+    "jest": "^28.1.3",
+    "rollup": "^2.79.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betsys-com/betsys-eslint.git"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "keywords": [
+    "eslint",
+    "angular",
+    "eslint plugin",
+    "angulat template",
+    "angular spacing lint",
+    "angular template eslint",
+    "angular template linter",
+    "angular interpolation eslint",
+    "angular interpolation linter",
+    "angular pipe liner",
+    "angular pipe eslint"
+  ],
+  "bugs": {
+    "url": "https://github.com/betsys-com/betsys-eslint/issues"
+  },
+  "homepage": "https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-plugin-angular-template-spacing#readme"
+}

@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["**/*.js"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": ["tsconfig.json"]
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "plugins": [
+        "angular-template-spacing"
+      ],
+      "extends": [
+        "plugin:angular-template-spacing/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
