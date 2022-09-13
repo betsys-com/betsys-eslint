@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from 'fs';
-import { Parser } from '@package/install/models/parser.model';
-import { Package, PackageType } from '@package/install/models/package.model';
-import { InstallationError } from '@package/install/errors/installation.error';
+import { Parser } from '@package/models/parser.model';
+import { Package, PackageType } from '@package/models/package.model';
+import { InstallationError } from '@package/errors/installation.error';
 
 export class PackageParser implements Parser<Promise<string[]>, [string]> {
   async parse(pathToPackageJson: string | null): Promise<string[]> {

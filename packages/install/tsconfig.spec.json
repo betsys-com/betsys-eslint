@@ -1,4 +1,13 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.spec.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist/tsc-out-test",
+    "esModuleInterop": true,
+    "paths": {
+      "@package/*": ["src/*"]
+    }
+  },
   "include": ["src/**/*.spec.ts"]
 }

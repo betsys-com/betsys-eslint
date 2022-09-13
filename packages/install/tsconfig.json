@@ -3,13 +3,13 @@
   "compilerOptions": {
     "rootDir": ".",
     "baseUrl": ".",
-    "outDir": "dist/tsc-out",
     "types": ["node"],
     "sourceMap": false,
     "declaration": false,
+    "outDir": "dist/tsc-out",
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@package/install/*": ["src/*"]
+      "@package/*": ["src/*"]
     }
   },
   "include": ["src/**/*.ts"],

@@ -1,9 +1,9 @@
 import { resolve } from 'path';
 import * as process from 'process';
-import { Parser } from '@package/install/models/parser.model';
-import { Arguments } from '@package/install/models/argument.model';
-import { PackageType } from '@package/install/models/package.model';
-import { ArgumentValidationError } from '@package/install/errors/argument-validation.error';
+import { Parser } from '@package/models/parser.model';
+import { Arguments } from '@package/models/argument.model';
+import { PackageType } from '@package/models/package.model';
+import { ArgumentValidationError } from '@package/errors/argument-validation.error';
 
 export class ArgumentParser implements Parser<Arguments> {
   parse(): Arguments {
