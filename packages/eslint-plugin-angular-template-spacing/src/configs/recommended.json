@@ -2,7 +2,7 @@
   "parser": "@angular-eslint/template-parser",
   "plugins": ["@angular-eslint/template"],
   "rules": {
-    "angular-template-spacing/pipe": ["error", "always"],
-    "angular-template-spacing/interpolation": ["error", "always", { "allowNewlines": false }]
+    "@betsys-eslint/angular-template-spacing/pipe": ["error", "always"],
+    "@betsys-eslint/angular-template-spacing/interpolation": ["error", "always", { "allowNewlines": false }]
   }
 }
