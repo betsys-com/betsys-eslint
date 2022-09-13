@@ -43,7 +43,7 @@ describe('Package Parser', () => {
   });
 
   it.each(['config', 'plugin'])('should create package name from type and name. Using %s', (packageType: string) => {
-    expect(PackageParser.createName((packageType as PackageType), 'name')).toBe(`eslint-${packageType}-name`);
+    expect(PackageParser.createName((packageType as PackageType), 'name')).toBe(`@betsys-eslint/eslint-${packageType}-name`);
   });
 
   it.each([

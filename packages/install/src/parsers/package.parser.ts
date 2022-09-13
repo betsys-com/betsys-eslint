@@ -17,7 +17,7 @@ export class PackageParser implements Parser<Promise<string[]>, [string]> {
   }
 
   static createName(packageType: PackageType, name: string): string {
-    return `eslint-${packageType}-${name}`;
+    return `@betsys-eslint/eslint-${packageType}-${name}`;
   }
 
   static stripVersion(packageWithVersion: string): string {
