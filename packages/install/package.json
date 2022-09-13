@@ -1,6 +1,6 @@
 {
   "name": "@betsys-eslint/install",
-  "version": "0.0.1-alpha.4",
+  "version": "0.1.0",
   "description": "Package installer for ESLint configurations and plugins that installs the peer dependencies of the package and the package itself.",
   "main": "dist/cli.min.js",
   "bin": {
