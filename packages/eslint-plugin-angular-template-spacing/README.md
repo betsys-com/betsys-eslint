@@ -36,6 +36,10 @@ after installation, add the configuration to you ESLint config:
     {
       files: ["*.html"],
       // Locate configuration for your HTML files
+      "plugins": [
+        // ...
+        "@betsys-eslint/angular-template-spacing"
+      ],
       "extends": [
         // ...
         "plugin:@betsys-eslint/angular-template-spacing/recommended"
