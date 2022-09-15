@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "$schema": "https://raw.githubusercontent.com/angular/angular-devkit-schematics-builds/main/collection-schema.json",
   "schematics": {
     "ng-add": {
       "description": "Installation",

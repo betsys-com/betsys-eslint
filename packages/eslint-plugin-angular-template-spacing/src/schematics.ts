@@ -4,6 +4,7 @@ import {
   isJsonArray,
   isJsonObject, JsonObject,
 } from '@angular-devkit/core';
+import { name, homepage } from '../package.json'
 
 function createOrPushToArray(json: JsonObject, path: string, member: string) {
   const array = json[path];
@@ -21,12 +22,10 @@ function createOrPushToArray(json: JsonObject, path: string, member: string) {
 export function ngAdd(_options: any): Rule {
   return (tree: Tree, _context: SchematicContext) => {
     const path = '.eslint.json';
-    const pluginName = '@betsys-eslint/eslint-plugin-angular-template-spacing'
-    const pluginSettings = `plugin:${pluginName}/recommended`
-    const pluginUrl = 'https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-plugin-angular-template-spacing'
+    const pluginSettings = `plugin:${name}/recommended`
 
     if (!tree.exists(path)) {
-      console.log(chalk.bold.red(`Unable to locate ${path} file, config will not be updated. You can do it manually by following the instructions at ${pluginUrl}`));
+      console.log(chalk.bold.red(`Unable to locate ${path} file, config will not be updated. You can do it manually by following the instructions at ${homepage}`));
       return tree;
     }
 
@@ -36,10 +35,24 @@ export function ngAdd(_options: any): Rule {
       return tree;
     }
 
-    createOrPushToArray(json, 'plugins', pluginName)
-    createOrPushToArray(json, 'extends', pluginSettings)
+    // By default, we will edit the root plugins.
+    let fieldsToEdit = json;
 
-    tree.overwrite(path, JSON.stringify(json, null, "\t"))
+    // This tries to find override settings for "*.ts" files. Will be undefined if they are not present.
+    const overrides =
+      json['overrides'] &&
+      isJsonArray(json['overrides']) &&
+      json['overrides'].find(override => isJsonObject(override) && isJsonArray(override['files']) && override['files'].includes('*.ts'));
+
+    // If we see that there are overrides for *.ts files, we will edit those.
+    if (overrides && isJsonObject(overrides)) {
+      fieldsToEdit = overrides;
+    }
+
+    createOrPushToArray(fieldsToEdit, 'plugins', name)
+    createOrPushToArray(fieldsToEdit, 'extends', pluginSettings)
+
+    tree.overwrite(path, JSON.stringify(json, null, 4))
 
     return tree;
   };
