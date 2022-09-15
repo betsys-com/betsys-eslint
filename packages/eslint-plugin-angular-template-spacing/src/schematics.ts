@@ -1,0 +1,46 @@
+import * as chalk from 'chalk';
+import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
+import {
+  isJsonArray,
+  isJsonObject, JsonObject,
+} from '@angular-devkit/core';
+
+function createOrPushToArray(json: JsonObject, path: string, member: string) {
+  const array = json[path];
+  if (isJsonArray(array)) {
+    if (!array.includes(member)) {
+      array.push(member);
+    }
+  } else {
+    json[path] = [member];
+  }
+}
+
+// You don't have to export the function as default. You can also have more than one rule factory
+// per file.
+export function ngAdd(_options: any): Rule {
+  return (tree: Tree, _context: SchematicContext) => {
+    const path = '.eslint.json';
+    const pluginName = '@betsys-eslint/eslint-plugin-angular-template-spacing'
+    const pluginSettings = `plugin:${pluginName}/recommended`
+    const pluginUrl = 'https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-plugin-angular-template-spacing'
+
+    if (!tree.exists(path)) {
+      console.log(chalk.bold.red(`Unable to locate ${path} file, config will not be updated. You can do it manually by following the instructions at ${pluginUrl}`));
+      return tree;
+    }
+
+    const json = tree.readJson(path)
+    if (!isJsonObject(json) || isJsonArray(json)) {
+      console.log(chalk.bold.red(`Your ${path} file is not a valid object. This should not be happening. No changes were made.`));
+      return tree;
+    }
+
+    createOrPushToArray(json, 'plugins', pluginName)
+    createOrPushToArray(json, 'extends', pluginSettings)
+
+    tree.overwrite(path, JSON.stringify(json, null, "\t"))
+
+    return tree;
+  };
+}
