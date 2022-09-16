@@ -1,5 +1,5 @@
 import { name, homepage } from '@package/../package.json';
-import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
+import type { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
 import { createOrPushToArray, isArray, isObject } from '@package/utils/schematics.utils';
 
 // You don't have to export the function as default. You can also have more than one rule factory per file.

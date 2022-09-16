@@ -1,4 +1,4 @@
-import { JsonArray, JsonObject, JsonValue } from '@package/models/schematics.model';
+import type { JsonArray, JsonObject, JsonValue } from '@package/models/schematics.model';
 
 export function createOrPushToArray(json: JsonObject, path: string, member: string): void {
   const array = json[path];
