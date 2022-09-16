@@ -12,9 +12,10 @@
   },
   "files": [
     "LICENSE",
-    "dist"
+    "dist",
+    "collection.json"
   ],
-  "schematics": "./src/collection.json",
+  "schematics": "./collection.json",
   "publishConfig": {
     "access": "public"
   },

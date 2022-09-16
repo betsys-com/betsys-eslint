@@ -1,11 +1,11 @@
 import json from '@rollup/plugin-json';
+import commonjs from '@rollup/plugin-commonjs';
 import { createBaseRollupConfig } from '../../rollup.helper';
-import commonjs from "@rollup/plugin-commonjs";
 
 const baseRollupConfig = createBaseRollupConfig();
 
 /**
- * @type {import('rollup').RollupOptions}
+ * @type {import('rollup').RollupOptions[]}
  */
 const config = [
   {
