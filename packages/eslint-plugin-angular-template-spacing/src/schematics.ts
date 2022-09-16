@@ -1,35 +1,21 @@
 import * as chalk from 'chalk';
+import { name, homepage } from '@package/../package.json';
+import { isJsonArray, isJsonObject } from '@angular-devkit/core';
+import { createOrPushToArray } from '@package/utils/schematics.utils';
 import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
-import {
-  isJsonArray,
-  isJsonObject, JsonObject,
-} from '@angular-devkit/core';
-import { name, homepage } from '../package.json'
 
-function createOrPushToArray(json: JsonObject, path: string, member: string) {
-  const array = json[path];
-  if (isJsonArray(array)) {
-    if (!array.includes(member)) {
-      array.push(member);
-    }
-  } else {
-    json[path] = [member];
-  }
-}
-
-// You don't have to export the function as default. You can also have more than one rule factory
-// per file.
+// You don't have to export the function as default. You can also have more than one rule factory per file.
 export function ngAdd(_options: any): Rule {
   return (tree: Tree, _context: SchematicContext) => {
     const path = '.eslint.json';
-    const pluginSettings = `plugin:${name}/recommended`
+    const pluginSettings = `plugin:${name}/recommended`;
 
     if (!tree.exists(path)) {
       console.log(chalk.bold.red(`Unable to locate ${path} file, config will not be updated. You can do it manually by following the instructions at ${homepage}`));
       return tree;
     }
 
-    const json = tree.readJson(path)
+    const json = tree.readJson(path);
     if (!isJsonObject(json) || isJsonArray(json)) {
       console.log(chalk.bold.red(`Your ${path} file is not a valid object. This should not be happening. No changes were made.`));
       return tree;
@@ -49,10 +35,10 @@ export function ngAdd(_options: any): Rule {
       fieldsToEdit = overrides;
     }
 
-    createOrPushToArray(fieldsToEdit, 'plugins', name)
-    createOrPushToArray(fieldsToEdit, 'extends', pluginSettings)
+    createOrPushToArray(fieldsToEdit, 'plugins', name);
+    createOrPushToArray(fieldsToEdit, 'extends', pluginSettings);
 
-    tree.overwrite(path, JSON.stringify(json, null, 4))
+    tree.overwrite(path, JSON.stringify(json, null, 4));
 
     return tree;
   };

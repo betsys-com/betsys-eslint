@@ -3,7 +3,7 @@
   "schematics": {
     "ng-add": {
       "description": "Installation",
-      "factory": "../dist/schematics/index#ngAdd"
+      "factory": "./dist/schematics/index#ngAdd"
     }
   }
 }
