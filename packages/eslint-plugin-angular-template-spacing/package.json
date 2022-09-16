@@ -29,8 +29,7 @@
     "eslint": "^8.0.0"
   },
   "devDependencies": {
-    "@angular-devkit/core": "^14.2.2",
-    "@angular-devkit/schematics": "^14.2.2",
+    "@angular-devkit/schematics": "^14.2.3",
     "@angular-eslint/eslint-plugin": "^14.0.3",
     "@angular-eslint/eslint-plugin-template": "^14.0.3",
     "@angular-eslint/template-parser": "^14.0.3",

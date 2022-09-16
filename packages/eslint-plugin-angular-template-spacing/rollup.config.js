@@ -1,5 +1,4 @@
 import json from '@rollup/plugin-json';
-import commonjs from '@rollup/plugin-commonjs';
 import { createBaseRollupConfig } from '../../rollup.helper';
 
 const baseRollupConfig = createBaseRollupConfig();
@@ -14,6 +13,7 @@ const config = [
     output: {
       ...baseRollupConfig.output,
       format: 'cjs',
+      exports: 'default',
       file: 'dist/index.min.js',
     },
     plugins: [...baseRollupConfig.plugins, json()],
@@ -27,7 +27,7 @@ const config = [
       format: 'cjs',
       file: 'dist/schematics/index.js',
     },
-    plugins: [...baseRollupConfig.plugins, json(), commonjs()],
+    plugins: [...baseRollupConfig.plugins, json()],
   },
 ];
 
