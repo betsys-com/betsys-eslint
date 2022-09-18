@@ -9,10 +9,8 @@
 <p align="center">Monorepo for all the ESLint tooling we use on our day-to-day basis in Betsys :fire:</p>
 
 <p align="center">
-  <img alt="npm" src="https://img.shields.io/npm/v/@betsys-eslint/install">
-  <img alt="Github lerna version" src="https://img.shields.io/github/lerna-json/v/betsys-com/betsys-eslint">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/main">
-  <img alt="Codecov" src="https://img.shields.io/codecov/c/github/betsys-com/betsys-eslint">
+  <img alt="Github Lint Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/lint/main?label=lint">
+  <img alt="Github Test Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/test/main?label=test">
 </p>
 
 Click on a specific configuration of a plugin to get the Quick Start guide.
