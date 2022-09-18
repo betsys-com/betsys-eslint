@@ -4,11 +4,10 @@
     "license": "MIT",
     "type": "module",
     "scripts": {
-        "test:all": "nx run-many --target=test",
-        "lint:all": "nx run-many --target=lint",
+        "test:all": "nx run-many --target=test --parallel",
+        "lint:all": "nx run-many --target=lint --parallel",
         "build:all": "nx run-many --target=build",
-        "publish:all": "lerna publish --no-private",
-        "bootstrap": "lerna bootstrap"
+        "publish:all": "lerna publish --no-private"
     },
     "private": true,
     "devDependencies": {

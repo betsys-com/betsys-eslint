@@ -6,8 +6,8 @@
     "description": "ESLint configuration used across the company for TypeScript-based projects",
     "main": "dist/index.min.cjs",
     "scripts": {
-        "test": "jest",
-        "lint": "eslint",
+        "test": "jest --passWithNoTests",
+        "lint": "eslint .",
         "build": "rollup -c"
     },
     "type": "module",
