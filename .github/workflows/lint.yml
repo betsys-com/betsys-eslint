@@ -16,4 +16,5 @@ jobs:
               with:
                   node-version: '16'
             - run: npx -y lerna bootstrap
+            - run: npm run build:all
             - run: npm run lint:all
