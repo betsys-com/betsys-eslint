@@ -20,16 +20,6 @@
             "extends": [
                 "@betsys-eslint/typescript"
             ]
-        },
-        {
-            "files": ["*.html"],
-            "plugins": [
-                "angular-template-spacing"
-            ],
-            "extends": [
-                "plugin:angular-template-spacing/recommended"
-            ],
-            "rules": {}
         }
     ]
 }
