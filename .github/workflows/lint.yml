@@ -1,0 +1,20 @@
+name: lint
+on:
+    pull_request:
+        branches:
+            - main
+        types:
+            - opened
+            - reopened
+            - synchronize
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: '16'
+            - run: npx -y lerna bootstrap
+            - run: npm run build:all
+            - run: npm run lint:all

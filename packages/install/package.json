@@ -1,59 +1,61 @@
 {
-  "name": "@betsys-eslint/install",
-  "version": "0.3.0",
-  "description": "Package installer for ESLint configurations and plugins that installs the peer dependencies of the package and the package itself.",
-  "main": "dist/cli.min.cjs",
-  "bin": {
-    "betsys": "dist/cli.min.cjs"
-  },
-  "scripts": {
-    "test": "NODE_OPTIONS='--experimental-json-modules' jest",
-    "lint": "eslint .",
-    "build": "rollup -c"
-  },
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/betsys-com/betsys-eslint.git"
-  },
-  "files": [
-    "dist",
-    "LICENSE"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">= 16"
-  },
-  "keywords": [
-    "eslint installer",
-    "eslint config installer",
-    "eslint plugin installer",
-    "betsys eslint installer",
-    "peer dependecy installer",
-    "eslint peer dependencies",
-    "auto install peer dependecies"
-  ],
-  "author": "Betsys, s.r.o. <code@betsys.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/betsys-com/betsys-eslint/issues"
-  },
-  "homepage": "https://github.com/betsys-com/betsys-eslint/tree/main/packages/install#readme",
-  "dependencies": {
-    "chalk": "^5.0.1",
-    "resolve-package-path": "^4.0.3"
-  },
-  "devDependencies": {
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-typescript": "^8.4.0",
-    "@types/jest": "^29.0.0",
-    "@types/node": "^18.7.16",
-    "jest": "^28.1.3",
-    "rollup": "^2.79.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "ts-jest": "^28.0.8",
-    "typescript": "^4.8.2"
-  }
+    "name": "@betsys-eslint/install",
+    "version": "0.3.0",
+    "description": "Package installer for ESLint configurations and plugins that installs the peer dependencies of the package and the package itself.",
+    "main": "dist/cli.min.cjs",
+    "bin": {
+        "betsys": "dist/cli.min.cjs"
+    },
+    "scripts": {
+        "test": "NODE_OPTIONS='--experimental-json-modules' jest",
+        "lint": "eslint .",
+        "build": "rollup -c"
+    },
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/betsys-com/betsys-eslint.git"
+    },
+    "files": [
+        "dist",
+        "LICENSE"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">= 16"
+    },
+    "keywords": [
+        "eslint installer",
+        "eslint config installer",
+        "eslint plugin installer",
+        "betsys eslint installer",
+        "peer dependecy installer",
+        "eslint peer dependencies",
+        "auto install peer dependecies"
+    ],
+    "author": "Betsys, s.r.o. <code@betsys.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/betsys-com/betsys-eslint/issues"
+    },
+    "homepage": "https://github.com/betsys-com/betsys-eslint/tree/main/packages/install#readme",
+    "dependencies": {
+        "chalk": "^5.0.1",
+        "resolve-package-path": "^4.0.3"
+    },
+    "devDependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-typescript": "^8.4.0",
+        "@betsys-eslint/eslint-config-typescript": "*",
+        "@types/jest": "^29.0.0",
+        "@types/node": "^18.7.16",
+        "eslint": "^8.23.1",
+        "jest": "^28.1.3",
+        "rollup": "^2.79.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "ts-jest": "^28.0.8",
+        "typescript": "^4.8.2"
+    }
 }
