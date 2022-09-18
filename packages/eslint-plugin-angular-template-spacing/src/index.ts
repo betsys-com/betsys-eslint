@@ -1,13 +1,14 @@
-import * as pipe from '@package/rules/pipe.rule';
-import recommended from '@package/configs/recommended.json';
-import * as interpolation from '@package/rules/interpolation.rule';
+import * as pipe from '@package/src/rules/pipe.rule';
+import recommended from '@package/src/configs/recommended.json';
+import * as interpolation from '@package/src/rules/interpolation.rule';
 
+// eslint-disable-next-line import/no-default-export
 export default {
     configs: {
-        recommended
+        recommended,
     },
     rules: {
         [pipe.ruleName]: pipe.ruleModule,
         [interpolation.ruleName]: interpolation.ruleModule,
     },
-}
+};

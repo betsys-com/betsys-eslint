@@ -1,11 +1,11 @@
 {
-  "extends": "../../tsconfig.spec.json",
-  "compilerOptions": {
-    "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {
-      "@package/*": ["./src/*"]
-    }
-  },
-  "include": ["src/**/*.spec.ts"]
+    "extends": "../../tsconfig.spec.json",
+    "compilerOptions": {
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "@package/*": ["*"]
+        }
+    },
+    "include": ["src/**/*.spec.ts"]
 }

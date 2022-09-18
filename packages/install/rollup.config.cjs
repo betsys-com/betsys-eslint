@@ -1,6 +1,5 @@
-import json from '@rollup/plugin-json';
-import { createBaseRollupConfig } from '../../rollup.helper';
-
+const json = require('@rollup/plugin-json');
+const { createBaseRollupConfig } = require('../../rollup.helper.cjs');
 const baseRollupConfig = createBaseRollupConfig();
 
 /**
@@ -12,7 +11,7 @@ const config = {
   output: {
     ...baseRollupConfig.output,
     format: 'esm',
-    file: 'dist/cli.min.js',
+    file: 'dist/cli.min.cjs',
     banner: '#!/usr/bin/env node'
   },
   plugins: [...baseRollupConfig.plugins, json()],
@@ -27,4 +26,4 @@ const config = {
   ],
 };
 
-export default config;
+module.exports = config;

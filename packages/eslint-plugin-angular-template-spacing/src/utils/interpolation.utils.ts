@@ -1,13 +1,14 @@
-import { BoundText } from '@package/models/interpolation.model';
-import type { InterpolationNode, IncompleteInterpolationNode } from '@package/models/interpolation.model';
+import { BoundText } from '@package/src/models/interpolation.model';
+import type { InterpolationNode, IncompleteInterpolationNode } from '@package/src/models/interpolation.model';
 
-export function* covertToInterpolationNodes(boundText: BoundText): Iterable<InterpolationNode> {
+export function *covertToInterpolationNodes(boundText: BoundText): Iterable<InterpolationNode> {
     const source = boundText.value.source ?? '';
     let line = boundText.loc?.start?.line ?? 0;
     let column = boundText.loc?.start?.column ?? 0;
     let offset = boundText.sourceSpan?.start?.offset ?? 0;
 
     let currentNode: IncompleteInterpolationNode | undefined = undefined;
+    // eslint-disable-next-line no-restricted-syntax
     for (const part of source.trim().split('\n')) {
         offset += part.length || 1;
         const split = part.split('');
@@ -44,6 +45,8 @@ export function* covertToInterpolationNodes(boundText: BoundText): Iterable<Inte
         line += 1;
         column = 0;
         offset += 1;
-        if (currentNode) currentNode.value += '\n';
+        if (currentNode) {
+            currentNode.value += '\n';
+        }
     }
 }

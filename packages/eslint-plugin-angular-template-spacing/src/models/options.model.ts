@@ -1,10 +1,10 @@
 export interface ExtendedOptions {
-  allowNewlines: boolean;
+    allowNewlines: boolean;
 }
 
 export enum RuleValue {
-  Always = 'always',
-  Never = 'never',
+    Always = 'always',
+    Never = 'never',
 }
 
 export type PipeRuleOptions = [RuleValue?];

@@ -1,12 +1,11 @@
-import json from '@rollup/plugin-json';
-import { createBaseRollupConfig } from '../../rollup.helper';
-
+const json = require('@rollup/plugin-json');
+const { createBaseRollupConfig } = require('../../rollup.helper.cjs');
 const baseRollupConfig = createBaseRollupConfig();
 
 /**
  * @type {import('rollup').RollupOptions[]}
  */
-const config = [
+const configs = [
   {
     ...baseRollupConfig,
     input: 'src/index.ts',
@@ -14,7 +13,7 @@ const config = [
       ...baseRollupConfig.output,
       format: 'cjs',
       exports: 'default',
-      file: 'dist/index.min.js',
+      file: 'dist/index.min.cjs',
     },
     plugins: [...baseRollupConfig.plugins, json()],
     external: ['@angular/compiler'],
@@ -31,4 +30,4 @@ const config = [
   },
 ];
 
-export default config;
+module.exports = configs;

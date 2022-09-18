@@ -1,5 +1,5 @@
 import type { TSESTree } from '@typescript-eslint/utils';
-import type { BoundAttribute } from '@package/models/pipe.model';
+import type { BoundAttribute } from '@package/src/models/pipe.model';
 
 export function convertSpanToLocation(span: BoundAttribute['valueSpan']): TSESTree.SourceLocation {
     return {

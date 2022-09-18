@@ -1,0 +1,35 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "ignorePatterns": ["node_modules", "dist"],
+    "overrides": [
+        {
+            "files": [
+                "*.js"
+            ],
+            "extends": [
+                "eslint:recommended"
+            ]
+        },
+        {
+            "files": ["*.ts"],
+            "extends": [
+                "@betsys-eslint/typescript"
+            ]
+        },
+        {
+            "files": ["*.html"],
+            "plugins": [
+                "angular-template-spacing"
+            ],
+            "extends": [
+                "plugin:angular-template-spacing/recommended"
+            ],
+            "rules": {}
+        }
+    ]
+}

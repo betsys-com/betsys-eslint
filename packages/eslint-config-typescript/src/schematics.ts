@@ -2,12 +2,10 @@ import { name } from '@package/package.json';
 import type { Rule, Tree } from '@angular-devkit/schematics';
 import { createOrPushToArray, isArray, isObject } from '@package/src/utils/schematics.utils';
 
-// You don't have to export the function as default. You can also have more than one rule factory per file.
 export function install(): Rule {
     return (tree: Tree) => {
         const fileName = '.eslintrc.json';
-        const packageName = name.replace('eslint-plugin-', '');
-        const pluginSettings = `plugin:${packageName}/recommended`;
+        const packageConfigName = name.replace('eslint-config-', '');
 
         if (!tree.exists(fileName)) {
             console.error(`Unable to locate ${fileName} file. Schematics will not be run.`);
@@ -22,22 +20,20 @@ export function install(): Rule {
             return tree;
         }
 
-        // By default, we will edit the root plugins.
+        // By default, we will edit the root configurations.
         let fieldsToEdit = json;
 
-        // This tries to find override settings for "*.html" files. Will be undefined if they are not present.
+        // This tries to find override settings for "*.ts" files. Will be undefined if they are not present.
         const overrides = json.overrides
             && isArray(json.overrides)
-            && json.overrides.find((override) => isObject(override) && isArray(override.files) && override.files.includes('*.html'));
+            && json.overrides.find((override) => isObject(override) && isArray(override.files) && override.files.includes('*.ts'));
 
         // If we see that there are overrides for *.ts files, we will edit those.
         if (overrides && isObject(overrides)) {
             fieldsToEdit = overrides;
         }
 
-        createOrPushToArray(fieldsToEdit, 'plugins', packageName);
-        createOrPushToArray(fieldsToEdit, 'extends', pluginSettings);
-
+        createOrPushToArray(fieldsToEdit, 'extends', packageConfigName);
         tree.overwrite(fileName, JSON.stringify(json, null, 4));
 
         return tree;

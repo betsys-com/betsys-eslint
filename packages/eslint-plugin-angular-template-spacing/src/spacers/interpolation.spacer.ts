@@ -1,4 +1,4 @@
-import type { InterpolationNode } from '@package/models/interpolation.model';
+import type { InterpolationNode } from '@package/src/models/interpolation.model';
 
 export class InterpolationSpacer {
     constructor(private expectWhitespace: boolean, private allowNewlines: boolean) {}
@@ -9,16 +9,16 @@ export class InterpolationSpacer {
 
     get checkRegExp(): RegExp {
         return this.expectWhitespace
-            ? new RegExp(`^\{\{${this.delimiter}([\\s\\S]*?)${this.delimiter}\}\}$`, 'g')
+            ? new RegExp(`^{{${this.delimiter}([\\s\\S]*?)${this.delimiter}}}$`, 'g')
             : /^\{\{\S([\s\S]*?)\S}}$/g;
     }
 
     get startCheckRegExp(): RegExp {
-        return this.expectWhitespace ? new RegExp(`^\{\{${this.delimiter}([\\s\\S]*?)\}\}$`, 'g') : /^\{\{\S([\s\S]*?)}}$/g;
+        return this.expectWhitespace ? new RegExp(`^{{${this.delimiter}([\\s\\S]*?)}}$`, 'g') : /^\{\{\S([\s\S]*?)}}$/g;
     }
 
     get endCheckRegExp(): RegExp {
-        return this.expectWhitespace ? new RegExp(`^\{\{([\\s\\S]*?)${this.delimiter}\}\}$`, 'g') : /^\{\{([\s\S]*?)\S}}$/g;
+        return this.expectWhitespace ? new RegExp(`^{{([\\s\\S]*?)${this.delimiter}}}$`, 'g') : /^\{\{([\s\S]*?)\S}}$/g;
     }
 
     *getIncorrectNodesWithAbsoluteLocation(node: InterpolationNode): Iterable<InterpolationNode> {
@@ -69,6 +69,6 @@ export class InterpolationSpacer {
                     column: endColumn >= 0 ? endColumn : 0,
                 },
             },
-        }
+        };
     }
 }

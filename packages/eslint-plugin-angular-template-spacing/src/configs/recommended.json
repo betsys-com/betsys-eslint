@@ -1,8 +1,8 @@
 {
-  "parser": "@angular-eslint/template-parser",
-  "plugins": ["@angular-eslint/template"],
-  "rules": {
-    "@betsys-eslint/angular-template-spacing/pipe": ["error", "always"],
-    "@betsys-eslint/angular-template-spacing/interpolation": ["error", "always", { "allowNewlines": false }]
-  }
+    "parser": "@angular-eslint/template-parser",
+    "plugins": ["@angular-eslint/template"],
+    "rules": {
+        "@betsys-eslint/angular-template-spacing/pipe": ["error", "always"],
+        "@betsys-eslint/angular-template-spacing/interpolation": ["error", "always", { "allowNewlines": false }]
+    }
 }
