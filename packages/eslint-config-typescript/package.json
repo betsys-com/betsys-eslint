@@ -27,7 +27,6 @@
         "eslint-plugin-import": "^2.26.0"
     },
     "devDependencies": {
-        "@betsys-eslint/eslint-config-typescript": "file:",
         "@rollup/plugin-commonjs": "^22.0.2",
         "@rollup/plugin-typescript": "^8.4.0",
         "@types/confusing-browser-globals": "^1.0.0",
