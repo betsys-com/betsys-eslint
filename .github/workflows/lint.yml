@@ -18,6 +18,6 @@ jobs:
             - uses: actions/setup-node@v3
               with:
                   node-version: '16'
-            - run: npx -y lerna bootstrap
+            - run: npm run boot
             - run: npm run build:all
             - run: npm run lint:all
