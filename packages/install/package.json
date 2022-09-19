@@ -1,6 +1,6 @@
 {
     "name": "@betsys-eslint/install",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "Package installer for ESLint configurations and plugins that installs the peer dependencies of the package and the package itself.",
     "main": "dist/cli.min.cjs",
     "bin": {
@@ -46,9 +46,9 @@
         "resolve-package-path": "^4.0.3"
     },
     "devDependencies": {
+        "@betsys-eslint/eslint-config-typescript": "^1.0.2",
         "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-typescript": "^8.4.0",
-        "@betsys-eslint/eslint-config-typescript": "*",
         "@types/jest": "^29.0.0",
         "@types/node": "^18.7.16",
         "eslint": "~8.22.0",

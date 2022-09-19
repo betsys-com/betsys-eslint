@@ -20,11 +20,11 @@
         "access": "public"
     },
     "peerDependencies": {
-        "eslint": "~8.22.0",
-        "@betsys-eslint/eslint-config-typescript": "^1.0.1"
+        "@betsys-eslint/eslint-config-typescript": "^1.0.1",
+        "eslint": "~8.22.0"
     },
     "devDependencies": {
-        "@betsys-eslint/eslint-config-typescript": "^1.0.1",
+        "@betsys-eslint/eslint-config-typescript": "^1.0.2",
         "@rollup/plugin-typescript": "^8.4.0",
         "@types/eslint": "^8.4.6",
         "@types/jest": "^29.0.0",
