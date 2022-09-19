@@ -16,10 +16,17 @@ If you haven't done it yet, take a look at [`@angular-eslint/eslint-plugin`](htt
 
 ## Quick Start
 
+#### Installing automatically
 To install the configuration, we recommend using our [installation script](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
-which also installs the needed peer dependencies automatically.
+which also automatically alters `.eslintrc.json` file.
 ```bash
 npx @betsys-eslint/install config angular
+```
+
+#### Installing manually
+To install the configuration manually, use the following:
+```bash
+npm install --save-dev @betsys-eslint/eslint-config-angular
 ```
 
 after installation, add the configuration to you ESLint config:
@@ -29,7 +36,7 @@ after installation, add the configuration to you ESLint config:
   "overrides": [
     {
       files: ["*.ts"],
-      // Locate configuration for your TypeScript files
+      // Locate configuration for your TS files
       "extends": [
         // ...
         "@betsys-eslint/angular"
@@ -38,5 +45,5 @@ after installation, add the configuration to you ESLint config:
   ]
 }
 ```
+
 This configuration is based on our [`@betsys-eslint/eslint-config-typescript`](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-typescript) configuration.
-If you'd like to use our full set of rules for Angular, also to check out [Angular Templates](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-angular-template) configuration.

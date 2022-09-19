@@ -1,5 +1,5 @@
 import type { ExecException } from 'child_process';
-import { NpmInstaller } from '@package/installers/npm.installer';
+import { NpmInstaller } from '@package/src/installers/npm.installer';
 
 jest.mock('child_process', () => {
     class CustomExecException implements ExecException {

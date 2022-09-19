@@ -27,7 +27,7 @@
         "@angular-eslint/eslint-plugin-template": ">= 12.0.0",
         "@angular-eslint/template-parser": ">= 12.0.0",
         "@angular/compiler": ">= 12.0.0",
-        "eslint": "^8.0.0"
+        "eslint": "~8.22.0"
     },
     "devDependencies": {
         "@angular-devkit/schematics": "^14.2.3",

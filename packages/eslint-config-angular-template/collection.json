@@ -1,0 +1,9 @@
+{
+    "$schema": "https://raw.githubusercontent.com/angular/angular-devkit-schematics-builds/main/collection-schema.json",
+    "schematics": {
+        "install": {
+            "description": "Installation",
+            "factory": "./dist/schematics/index#install"
+        }
+    }
+}

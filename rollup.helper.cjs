@@ -1,6 +1,5 @@
 const { terser } = require('rollup-plugin-terser');
 const typescript = require('@rollup/plugin-typescript');
-const { default: nodeResolve } = require('@rollup/plugin-node-resolve');
 
 /**
  * @returns {import('rollup').RollupOptions}
@@ -15,7 +14,6 @@ const createBaseRollupConfig = () => ({
   },
   plugins: [
     typescript(),
-    nodeResolve(),
   ],
 });
 

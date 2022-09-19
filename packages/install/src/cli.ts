@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 import chalk from 'chalk';
-import { NpmInstaller } from '@package/installers/npm.installer';
-import { ArgumentParser } from '@package/parsers/argument.parser';
-import { resolvePackageName } from '@package/utils/package.utils';
-import { SchemaInstaller } from '@package/installers/schema.installer';
+import { NpmInstaller } from '@package/src/installers/npm.installer';
+import { ArgumentParser } from '@package/src/parsers/argument.parser';
+import { resolvePackageName } from '@package/src/utils/package.utils';
+import { SchemaInstaller } from '@package/src/installers/schema.installer';
 
 (async () => {
     try {
@@ -18,6 +18,6 @@ import { SchemaInstaller } from '@package/installers/schema.installer';
 
         console.info(chalk.bold.green(`Package ${packageName} have been installed.`));
     } catch (e) {
-        console.error(chalk.bold.red(`${e}`));
+        console.error(chalk.bold.red(e));
     }
 })();

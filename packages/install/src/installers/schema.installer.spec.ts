@@ -1,5 +1,5 @@
 import type { ExecException } from 'child_process';
-import { SchemaInstaller } from '@package/installers/schema.installer';
+import { SchemaInstaller } from '@package/src/installers/schema.installer';
 
 jest.mock('child_process', () => {
     class CustomExecException implements ExecException {

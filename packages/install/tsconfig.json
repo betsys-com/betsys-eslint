@@ -9,7 +9,7 @@
     "outDir": "dist/tsc-out",
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@package/*": ["src/*"]
+      "@package/*": ["*"]
     }
   },
   "include": ["src/**/*.ts"],

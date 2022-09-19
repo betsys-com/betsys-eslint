@@ -16,10 +16,17 @@ If you haven't done it yet, take a look at [`@typescript-eslint/eslint-plugin`](
 
 ## Quick Start
 
+#### Installing automatically
 To install the configuration, we recommend using our [installation script](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
-which also installs the needed peer dependencies automatically.
+which also automatically alters `.eslintrc.json` file.
 ```bash
 npx @betsys-eslint/install config nestjs
+```
+
+#### Installing manually
+To install the configuration manually, use the following:
+```bash
+npm install --save-dev @betsys-eslint/eslint-config-nestjs
 ```
 
 after installation, add the configuration to you ESLint config:
@@ -29,7 +36,7 @@ after installation, add the configuration to you ESLint config:
   "overrides": [
     {
       files: ["*.ts"],
-      // Locate configuration for your TypeScript files
+      // Locate configuration for your TS files
       "extends": [
         // ...
         "@betsys-eslint/nestjs"

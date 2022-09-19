@@ -1,5 +1,5 @@
-import { ArgumentParser } from '@package/parsers/argument.parser';
-import { ArgumentValidationError } from '@package/errors/argument-validation.error';
+import { ArgumentParser } from '@package/src/parsers/argument.parser';
+import { ArgumentValidationError } from '@package/src/errors/argument-validation.error';
 
 jest.mock('path', () => {
     const actualPath = jest.requireActual('path');

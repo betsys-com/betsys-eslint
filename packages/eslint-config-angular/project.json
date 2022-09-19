@@ -1,0 +1,10 @@
+{
+    "root": "packages/eslint-config-nestjs",
+    "sourceRoot": "packages/eslint-config-nestjs/src",
+    "projectType": "library",
+    "build": {
+        "outputs": [
+            "dist"
+        ]
+    }
+}

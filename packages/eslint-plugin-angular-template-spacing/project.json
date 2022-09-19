@@ -1,0 +1,10 @@
+{
+    "root": "packages/eslint-plugin-angular-template-spacing",
+    "sourceRoot": "packages/eslint-plugin-angular-template-spacing/src",
+    "projectType": "library",
+    "build": {
+        "outputs": [
+            "dist"
+        ]
+    }
+}

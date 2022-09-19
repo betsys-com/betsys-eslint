@@ -13,8 +13,10 @@
     "type": "module",
     "files": [
         "LICENSE",
-        "dist"
+        "dist",
+        "collection.json"
     ],
+    "schematics": "./collection.json",
     "publishConfig": {
         "access": "public"
     },
@@ -22,7 +24,7 @@
         "@typescript-eslint/eslint-plugin": "^5.37.0",
         "@typescript-eslint/parser": "^5.36.2",
         "confusing-browser-globals": "^1.0.11",
-        "eslint": "^8.0.0",
+        "eslint": "~8.22.0",
         "eslint-import-resolver-typescript": "^3.5.1",
         "eslint-plugin-import": "^2.26.0"
     },

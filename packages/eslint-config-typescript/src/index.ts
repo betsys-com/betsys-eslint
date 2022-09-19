@@ -11,10 +11,6 @@ const config: TSESLint.Linter.Config = {
         './rules/variables.cjs',
     ],
     parser: '@typescript-eslint/parser',
-    ignorePatterns: ['node_modules', 'dist'],
-    parserOptions: {
-        project: ['./tsconfig.json'],
-    },
     plugins: ['@typescript-eslint'],
 };
 

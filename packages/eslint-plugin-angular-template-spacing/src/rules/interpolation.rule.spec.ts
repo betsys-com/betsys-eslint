@@ -251,7 +251,7 @@ describe('Interpolation Rule', () => {
                     expect(spy).toHaveBeenCalledTimes(2);
                     expect(spy).toHaveBeenNthCalledWith(1, { fix, messageId, loc: locs[0] });
                     expect(spy).toHaveBeenNthCalledWith(2, { fix, messageId, loc: locs[1] });
-                }
+                },
             );
 
             it.each([

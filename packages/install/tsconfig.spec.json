@@ -6,7 +6,7 @@
     "outDir": "dist/tsc-out-test",
     "esModuleInterop": true,
     "paths": {
-      "@package/*": ["src/*"]
+      "@package/*": ["*"]
     }
   },
   "include": ["src/**/*.spec.ts"]

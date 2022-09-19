@@ -14,12 +14,17 @@
 Having at least basic Angular ESLint already configured will make the installation process way easier.
 If you haven't done it yet, take a look at [`@angular-eslint/eslint-plugin`](https://github.com/angular-eslint/angular-eslint).
 
-## Quick Start
-
+#### Installing automatically
 To install the configuration, we recommend using our [installation script](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
-which also installs the needed peer dependencies automatically.
+which also automatically alters `.eslintrc.json` file.
 ```bash
 npx @betsys-eslint/install config angular-template
+```
+
+#### Installing manually
+To install the configuration manually, use the following:
+```bash
+npm install --save-dev @betsys-eslint/eslint-config-angular-template
 ```
 
 after installation, add the configuration to you ESLint config:
@@ -39,4 +44,5 @@ after installation, add the configuration to you ESLint config:
 }
 ```
 
-If you'd like to use our full set of rules for Angular, also to check out [Angular](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-angular) configuration.
+If you'd like to use our full set of rules for Angular, check out the [Angular](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-angular) configuration.
+Also, this configuration uses our [Angular Template Spacing](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-plugin-angular-template-spacing) plugin to make sure your spacing is correct. 

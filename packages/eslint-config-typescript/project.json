@@ -1,0 +1,10 @@
+{
+    "root": "packages/eslint-config-typescript",
+    "sourceRoot": "packages/eslint-config-typescript/src",
+    "projectType": "library",
+    "build": {
+        "outputs": [
+            "dist"
+        ]
+    }
+}

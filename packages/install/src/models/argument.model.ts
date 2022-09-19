@@ -1,4 +1,4 @@
-import { PackageType } from '@package/models/package.model';
+import { PackageType } from '@package/src/models/package.model';
 
 export interface Arguments {
     path: string;
