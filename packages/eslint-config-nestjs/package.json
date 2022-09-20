@@ -1,6 +1,6 @@
 {
     "name": "@betsys-eslint/eslint-config-nestjs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "author": "Betsys, s.r.o. <code@betsys.com>",
     "description": "ESLint configuration used across the company for NestJS projects",
