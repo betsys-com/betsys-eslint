@@ -26,7 +26,7 @@ const configs = [
         output: {
             ...baseRollupConfig.output,
             format: 'cjs',
-            file: 'dist/schematics/index.js',
+            file: 'dist/schematics/index.cjs',
         },
         plugins: [...baseRollupConfig.plugins, json()],
     },
