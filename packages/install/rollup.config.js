@@ -12,7 +12,7 @@ const config = {
     output: {
         ...baseRollupConfig.output,
         format: 'esm',
-        file: 'dist/cli.min.cjs',
+        file: 'dist/cli.min.js',
         banner: '#!/usr/bin/env node'
     },
     plugins: [...baseRollupConfig.plugins, json(), nodeResolve()],
