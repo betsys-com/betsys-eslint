@@ -3,7 +3,7 @@
     "schematics": {
         "install": {
             "description": "Installation",
-            "factory": "./dist/schematics/index#install"
+            "factory": "./dist/schematics/index.cjs#install"
         }
     }
 }
