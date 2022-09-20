@@ -1,11 +1,6 @@
 import { name } from '@package/package.json';
 import type { Rule, Tree } from '@angular-devkit/schematics';
-import {
-    isArray,
-    isObject,
-    removeFromArray,
-    createOrPushToArray,
-} from '@package/src/utils/schematics.utils';
+import { isArray, isObject, removeFromArray, createOrPushToArray } from '@package/src/utils/schematics.utils';
 
 export function install(): Rule {
     return (tree: Tree) => {
