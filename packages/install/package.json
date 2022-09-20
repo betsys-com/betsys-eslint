@@ -19,6 +19,7 @@
         "dist",
         "LICENSE"
     ],
+    "type": "module",
     "publishConfig": {
         "access": "public"
     },
