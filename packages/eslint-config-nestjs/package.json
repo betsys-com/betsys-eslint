@@ -13,7 +13,8 @@
     "type": "module",
     "files": [
         "LICENSE",
-        "dist"
+        "dist",
+        "collection.json"
     ],
     "schematics": "./collection.json",
     "publishConfig": {
