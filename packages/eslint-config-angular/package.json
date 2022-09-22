@@ -1,6 +1,6 @@
 {
     "name": "@betsys-eslint/eslint-config-angular",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "MIT",
     "author": "Betsys, s.r.o. <code@betsys.com>",
     "description": "ESLint configuration used across the company for Angular projects",
@@ -30,7 +30,7 @@
         "@angular-eslint/eslint-plugin": "^14.1.1",
         "@angular-eslint/eslint-plugin-template": "^14.1.1",
         "@angular-eslint/template-parser": "^14.1.1",
-        "@betsys-eslint/eslint-config-typescript": "^1.0.3",
+        "@betsys-eslint/eslint-config-typescript": "^1.0.4",
         "@rollup/plugin-typescript": "^8.4.0",
         "@types/eslint": "^8.4.6",
         "@types/jest": "^29.0.0",
