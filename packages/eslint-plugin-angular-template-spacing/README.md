@@ -23,7 +23,7 @@ npx @betsys-eslint/install plugin angular-template-spacing
 ```
 
 To read more about our installation script visit: [@betsys-eslint/install](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install).
-:warning: This package currently works only with `.eslintrc.json` file. We plan to support other configuration files (`.js` and `.yml`) in the future.
+<br>:warning: This package currently works only with `.eslintrc.json` file. We plan to support other configuration files (`.js` and `.yml`) in the future.
 
 #### Installing manually
 You can install the plugin without using the installation script above, see the following:

@@ -24,7 +24,7 @@ npx @betsys-eslint/install config angular
 ```
 
 To read more about our installation script visit: [@betsys-eslint/install](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install).
-:warning: This package currently works only with `.eslintrc.json` file. We plan to support other configuration files (`.js` and `.yml`) in the future.
+<br>:warning: This package currently works only with `.eslintrc.json` file. We plan to support other configuration files (`.js` and `.yml`) in the future.
 
 #### Installing manually
 To install the configuration manually, use the following:
