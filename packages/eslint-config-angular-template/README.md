@@ -11,15 +11,17 @@
 ---
 
 ## Requirements
-Having at least basic Angular ESLint already configured will make the installation process way easier.
-If you haven't done it yet, take a look at [`@angular-eslint/eslint-plugin`](https://github.com/angular-eslint/angular-eslint).
+We recommend using Node.js v16 as we do not support lower version of Node.js.
+Angular version 12 and later are supported.
 
 #### Installing automatically
-To install the configuration, we recommend using our [installation script](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
-which also automatically alters `.eslintrc.json` file.
+To install the configuration with all the necessary configuration changes, use the following:
 ```bash
 npx @betsys-eslint/install config angular-template
 ```
+
+To read more about our installation script visit: [@betsys-eslint/install](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install).
+:warning: This package currently works only with `.eslintrc.json` file. We plan to support other configuration files (`.js` and `.yml`) in the future.
 
 #### Installing manually
 To install the configuration manually, use the following:
@@ -30,7 +32,6 @@ npm install --save-dev @betsys-eslint/eslint-config-angular-template
 after installation, add the configuration to you ESLint config:
 ```json5
 {
-  // Root configuration of your project
   "overrides": [
     {
       files: ["*.html"],
@@ -44,5 +45,8 @@ after installation, add the configuration to you ESLint config:
 }
 ```
 
+---
+
+#### About the configuration
 If you'd like to use our full set of rules for Angular, check out the [Angular](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-angular) configuration.
 Also, this configuration uses our [Angular Template Spacing](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-plugin-angular-template-spacing) plugin to make sure your spacing is correct. 

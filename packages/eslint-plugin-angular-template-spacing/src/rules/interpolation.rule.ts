@@ -26,7 +26,7 @@ function createReport(
 
 export const ruleName = 'interpolation';
 export const ruleModule: ModuleType = {
-    defaultOptions: [RuleValue.Always, { allowNewlines: false }],
+    defaultOptions: [RuleValue.Always, { allowNewlines: true }],
     meta: {
         type: 'suggestion',
         fixable: 'whitespace',

@@ -10,11 +10,14 @@
 
 ---
 
+## Requirements
+This cli tool requires Node.js v16 and later to work correctly.
+
 ## Quick Start
 
-Installs all the peer dependencies of the package, and the package itself with a single command.
+CLI tool will install any `@betsys-eslint` package with its peer dependencies and execute the package's `install` schematics that alters your code automatically.
 
-#### Installing ESLint configurations
+### Installing ESLint configurations
 
 ```bash
 npx @betsys-eslint/install config CONFIGURATION_NAME
@@ -24,7 +27,7 @@ npx @betsys-eslint/install config CONFIGURATION_NAME
 npx @betsys-eslint/install config typescript
 ```
 
-#### Installing ESLint plugins
+### Installing ESLint plugins
 ```bash
 npx @betsys-eslint/install plugin PLUGIN_NAME
 # Note: Use PLUGIN_NAME without "eslint-plugin" prefix
@@ -33,7 +36,7 @@ npx @betsys-eslint/install plugin PLUGIN_NAME
 npx @betsys-eslint/install plugin angular-template-spacing
 ```
 
-#### Command details
+### Command details
 ```bash
 npx @betsys-eslint/install TYPE NAME INSTALL_DIR
 ```
@@ -42,8 +45,8 @@ Parameters:
 - TYPE (required)
   - either `config` or `plugin`
 - NAME (required)
-  - when `TYPE` is `config`, name of the config package without `@betsys-eslint/eslint-config` prefix
-  - when `TYPE` is `plugin`, name of the plugin package without `@betsys-eslint/eslint-plugin` prefix
+  - when `TYPE` is `config`, name of the config package without `@betsys-eslint/eslint-config-` prefix
+  - when `TYPE` is `plugin`, name of the plugin package without `@betsys-eslint/eslint-plugin-` prefix
 - INSTALL_DIR (optional)
   - path to directory with `package.json` file (relative or absolute)
   - defaults to current directory

@@ -11,16 +11,19 @@
 ---
 
 ## Requirements
-Angular ESLint configured
+We recommend using Node.js v16 as we do not support lower version of Node.js.
+Angular version 12 and later are supported.
 
 ## Quick Start
 
 #### Installing automatically
-To install the configuration, we recommend using our [installation script](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
-which also automatically alters `.eslintrc.json` file.
+To install the configuration with all the necessary configuration changes, use the following:
 ```bash
 npx @betsys-eslint/install plugin angular-template-spacing
 ```
+
+To read more about our installation script visit: [@betsys-eslint/install](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install).
+:warning: This package currently works only with `.eslintrc.json` file. We plan to support other configuration files (`.js` and `.yml`) in the future.
 
 #### Installing manually
 You can install the plugin without using the installation script above, see the following:
@@ -51,4 +54,46 @@ after installation, add the plugin to you ESLint config:
 
 ## Specific rules
 
-TBA
+#### @betsys-eslint/angular-template-spacing/interpolation
+We follow common ESLint configuration practices:
+- First parameter is [`ESLint severity level`](https://eslint.org/docs/latest/user-guide/configuring/rules)
+- Second parameter
+  - `always` requires whitespace between `|` (pipe) character
+  - `never` disallows whitespace between `|` (pipe) character
+- Third parameter is an object with additional options
+  - `allowNewlines` option:
+    - defaults to `true`
+    - `false` disallows newlines to be treated as "whitespace"
+    - `true` allows newlines to be treated as "whitespace"
+
+Example:
+```json5
+{
+  "@betsys-eslint/angular-template-spacing/interpolation": ["error", "always", { "allowNewlines": false }] 
+}
+```
+
+#### @betsys-eslint/angular-template-spacing/pipe
+We follow common ESLint configuration practices:
+- First parameter is [`ESLint severity level`](https://eslint.org/docs/latest/user-guide/configuring/rules)
+- Second parameter
+  - `always` requires whitespace between `|` (pipe) character
+  - `never` disallows whitespace between `|` (pipe) character
+
+Example:
+```json5
+{
+  "@betsys-eslint/angular-template-spacing/pipe": ["error", "always"] 
+}
+```
+
+## Included configurations
+Instead of configuring the rules yourself, you can use one of our included configurations listed below.
+
+#### Recommended (@betsys-eslint/angular-template-spacing/recommended)
+```json5
+{
+    "@betsys-eslint/angular-template-spacing/interpolation": ["error", "always", { "allowNewlines": false }],
+    "@betsys-eslint/angular-template-spacing/pipe": ["error", "always"]
+}
+```

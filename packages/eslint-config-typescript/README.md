@@ -11,17 +11,18 @@
 ---
 
 ## Requirements
-Having at least basic ESLint configuration will make the installation process way easier.
-If you haven't done it yet, take a look at [`@typescript-eslint/eslint-plugin`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin).
+We recommend using Node.js v16 as we do not support lower version of Node.js.
 
 ## Quick Start
 
 #### Installing automatically
-To install the configuration, we recommend using our [installation script](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
-which also automatically alters `.eslintrc.json` file.
+To install the configuration with all the necessary configuration changes, use the following:
 ```bash
 npx @betsys-eslint/install config typescript
 ```
+
+To read more about our installation script visit: [@betsys-eslint/install](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install).
+:warning: This package currently works only with `.eslintrc.json` file. We plan to support other configuration files (`.js` and `.yml`) in the future.
 
 #### Installing manually
 To install the configuration manually, use the following:
@@ -32,7 +33,6 @@ npm install --save-dev @betsys-eslint/eslint-config-typescript
 after installation, add the configuration to you ESLint config:
 ```json5
 {
-  // Root configuration of your project
   "overrides": [
     {
       files: ["*.ts"],
@@ -46,4 +46,11 @@ after installation, add the configuration to you ESLint config:
 }
 ```
 
-This configuration is inspired by [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) ESLint package.
+---
+
+#### About the configuration
+The configuration is inspired by
+[`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+and
+[`eslint-config-airbnb-typescript`](https://github.com/iamturns/eslint-config-airbnb-typescript)
+ESLint packages and extends `@typescript-eslint/recommended` configuration.

@@ -6,14 +6,14 @@
   </picture>
 </p>
 <h1 align="center">Betsys ESLint</h1>
-<p align="center">Monorepo for all the ESLint tooling we use on our day-to-day basis in Betsys :fire:</p>
+<p align="center">Monorepo for all the ESLint tooling we use in Betsys :fire:</p>
 
 <p align="center">
   <img alt="Github Lint Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/lint/main?label=lint">
   <img alt="Github Test Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/test/main?label=test">
 </p>
 
-Click on a specific configuration of a plugin to get the Quick Start guide.
+Click on a specific configuration or plugin to get more information and installation guide.
 
 - **Configurations:**
   - [TypeScript](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-typescript)
@@ -22,3 +22,8 @@ Click on a specific configuration of a plugin to get the Quick Start guide.
   - [Nest.js](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-nestjs)
 - **Plugins:**
   - [angular-template-spacing](https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-plugin-angular-template-spacing)
+
+This monorepo also includes a [`cli-based installer`](https://github.com/betsys-com/betsys-eslint/tree/main/packages/install)
+that can install and automatically alter your code for every package inside this repository.
+
+Feel free to contribute, discuss and raise any issues related to the packages in this monorepo. 
