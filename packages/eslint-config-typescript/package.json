@@ -1,69 +1,69 @@
 {
-    "name": "@betsys-eslint/eslint-config-typescript",
-    "version": "1.0.4",
-    "license": "MIT",
-    "author": "Betsys, s.r.o. <code@betsys.com>",
-    "description": "ESLint configuration used across the company for TypeScript-based projects",
-    "main": "dist/index.min.cjs",
-    "scripts": {
-        "test": "jest --passWithNoTests",
-        "lint": "eslint .",
-        "build": "rollup -c"
-    },
-    "type": "module",
-    "files": [
-        "LICENSE",
-        "dist",
-        "collection.json"
-    ],
-    "schematics": "./collection.json",
-    "publishConfig": {
-        "access": "public"
-    },
-    "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.37.0",
-        "@typescript-eslint/parser": "^5.36.2",
-        "confusing-browser-globals": "^1.0.11",
-        "eslint": "~8.22.0",
-        "eslint-import-resolver-typescript": "^3.5.1",
-        "eslint-plugin-import": "^2.26.0"
-    },
-    "devDependencies": {
-        "@rollup/plugin-commonjs": "^22.0.2",
-        "@rollup/plugin-typescript": "^8.4.0",
-        "@types/confusing-browser-globals": "^1.0.0",
-        "@types/eslint": "^8.4.6",
-        "@types/jest": "^29.0.0",
-        "@typescript-eslint/eslint-plugin": "^5.37.0",
-        "@typescript-eslint/parser": "^5.36.2",
-        "@typescript-eslint/utils": "^5.37.0",
-        "confusing-browser-globals": "^1.0.11",
-        "eslint": "~8.22.0",
-        "eslint-import-resolver-typescript": "^3.5.1",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-no-relative-import-paths": "^1.5.2",
-        "jest": "^28.1.3",
-        "rollup": "^2.79.0",
-        "rollup-plugin-terser": "^7.0.2",
-        "ts-jest": "^28.0.8",
-        "typescript": "^4.8.2"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/betsys-com/betsys-eslint.git"
-    },
-    "engines": {
-        "node": ">= 16"
-    },
-    "keywords": [
-        "eslint",
-        "typescript",
-        "eslint config",
-        "betsys eslint config",
-        "eslint typescript config"
-    ],
-    "bugs": {
-        "url": "https://github.com/betsys-com/betsys-eslint/issues"
-    },
-    "homepage": "https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-typescript#readme"
+  "name": "@betsys-eslint/eslint-config-typescript",
+  "version": "1.1.0",
+  "license": "MIT",
+  "author": "Betsys, s.r.o. <code@betsys.com>",
+  "description": "ESLint configuration used across the company for TypeScript-based projects",
+  "main": "dist/index.min.cjs",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "lint": "eslint .",
+    "build": "rollup -c"
+  },
+  "type": "module",
+  "files": [
+    "LICENSE",
+    "dist",
+    "collection.json"
+  ],
+  "schematics": "./collection.json",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.36.2",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint": "~8.22.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-typescript": "^8.4.0",
+    "@types/confusing-browser-globals": "^1.0.0",
+    "@types/eslint": "^8.4.6",
+    "@types/jest": "^29.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.36.2",
+    "@typescript-eslint/utils": "^5.37.0",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint": "~8.22.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-no-relative-import-paths": "^1.5.2",
+    "jest": "^28.1.3",
+    "rollup": "^2.79.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betsys-com/betsys-eslint.git"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "keywords": [
+    "eslint",
+    "typescript",
+    "eslint config",
+    "betsys eslint config",
+    "eslint typescript config"
+  ],
+  "bugs": {
+    "url": "https://github.com/betsys-com/betsys-eslint/issues"
+  },
+  "homepage": "https://github.com/betsys-com/betsys-eslint/tree/main/packages/eslint-config-typescript#readme"
 }
