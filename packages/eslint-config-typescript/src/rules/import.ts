@@ -2,7 +2,11 @@
 import type { TSESLint } from '@typescript-eslint/utils';
 
 const config: TSESLint.Linter.Config = {
-    plugins: ['import'],
+    plugins: [
+        'import',
+        'no-relative-import-paths',
+        'no-autofix',
+    ],
     extends: [
         'plugin:import/errors',
         'plugin:import/warnings',
@@ -232,6 +236,12 @@ const config: TSESLint.Linter.Config = {
         // Use this rule to prevent importing packages through relative paths.
         // https://github.com/benmosher/eslint-plugin-import/blob/1012eb951767279ce3b540a4ec4f29236104bb5b/docs/rules/no-relative-packages.md
         'import/no-relative-packages': 'error',
+
+        // ensure that no relative paths are used within imports
+        // also make sure no relative paths rule isn't automatically fixed (doesn't take into account compilerOptions therefore is unusable)
+        // as described in the documentation https://www.npmjs.com/package/eslint-plugin-no-autofix
+        'no-relative-import-paths/no-relative-import-paths': 'off',
+        'no-autofix/no-relative-import-paths/no-relative-import-paths': ['error', { allowSameFolder: false }],
     },
 };
 
