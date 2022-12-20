@@ -11,7 +11,10 @@ const config: TSESLint.Linter.Config = {
         './rules/variables.cjs',
     ],
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint'],
+    plugins: [
+        '@typescript-eslint',
+        'no-relative-import-paths',
+    ],
 };
 
 // eslint-disable-next-line import/no-default-export
