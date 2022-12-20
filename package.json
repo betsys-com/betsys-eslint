@@ -20,6 +20,7 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^14.0.1",
     "@rollup/plugin-typescript": "^8.5.0",
+    "eslint-plugin-no-autofix": "^1.2.3",
     "lerna": "^5.5.1",
     "nx": "15.3.3",
     "prettier": "^2.6.2",
@@ -31,4 +32,3 @@
     "packages/**"
   ]
 }
-

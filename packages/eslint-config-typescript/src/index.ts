@@ -13,7 +13,6 @@ const config: TSESLint.Linter.Config = {
     parser: '@typescript-eslint/parser',
     plugins: [
         '@typescript-eslint',
-        'no-relative-import-paths',
     ],
 };
 

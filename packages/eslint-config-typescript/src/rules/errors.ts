@@ -218,9 +218,6 @@ const config: TSESLint.Linter.Config = {
         // https://eslint.org/docs/rules/valid-typeof
         // this rule is already checked by @typescript-eslint
         'valid-typeof': 'off',
-
-        // ensure that no relative paths are used within imports
-        'no-relative-import-paths/no-relative-import-paths': ['error', { allowSameFolder: false }],
     },
 };
 
