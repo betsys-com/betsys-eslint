@@ -335,6 +335,16 @@ describe('Pipe Rule', () => {
                 expect(spy).toHaveBeenCalledTimes(0);
             });
 
+            it('should not create a report for attribute without value', () => {
+                const boundAttribute = {
+                    value: { source: '<div [attr]></div>' } as BoundAttribute['value'],
+                } as BoundAttribute & TSESTree.BaseNode;
+                const spy = jest.spyOn(context, 'report');
+                listener.BoundAttribute(boundAttribute);
+
+                expect(spy).toHaveBeenCalledTimes(0);
+            });
+
             it.each([
                 { html: '<div [attr]="something| pipe"></div>', loc: mockLocation([0, 22], [0, 22]) },
                 { html: '<div [attr]="something |pipe"></div>', loc: mockLocation([0, 24], [0, 24]) },
