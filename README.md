@@ -9,8 +9,8 @@
 <p align="center">Monorepo for all the ESLint tooling we use in Betsys :fire:</p>
 
 <p align="center">
-  <img alt="Github Lint Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/lint/main?label=lint">
-  <img alt="Github Test Workflow Status" src="https://img.shields.io/github/workflow/status/betsys-com/betsys-eslint/test/main?label=test">
+  <img alt="Github Lint Workflow Status" src="https://img.shields.io/github/actions/workflow/status/betsys-com/betsys-eslint/lint.yml?branch=main&label=lint">
+  <img alt="Github Test Workflow Status" src="https://img.shields.io/github/actions/workflow/status/betsys-com/betsys-eslint/test.yml?branch=main&label=test">
 </p>
 
 Click on a specific configuration or plugin to get more information and installation guide.
