@@ -80,6 +80,10 @@ export const ruleModule: ModuleType = {
                 }
             },
             BoundAttribute(attribute: BoundAttribute): void {
+                if (!attribute.valueSpan) {
+                    return;
+                }
+
                 const interpolationNode: InterpolationNode = {
                     value: attribute.value.source ?? '',
                     offset: attribute.valueSpan.start.offset,
