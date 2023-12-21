@@ -1,10 +1,9 @@
 {
-    "root": "packages/eslint-config-typescript",
+    "name": "eslint-config-typescript",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "packages/eslint-config-typescript/src",
     "projectType": "library",
     "build": {
-        "outputs": [
-            "dist"
-        ]
+        "outputs": ["dist"]
     }
 }

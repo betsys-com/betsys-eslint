@@ -1,10 +1,9 @@
 {
-    "root": "packages/eslint-plugin-angular-template-spacing",
+    "name": "eslint-plugin-angular-template-spacing",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "packages/eslint-plugin-angular-template-spacing/src",
     "projectType": "library",
     "build": {
-        "outputs": [
-            "dist"
-        ]
+        "outputs": ["dist"]
     }
 }
