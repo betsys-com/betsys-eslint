@@ -1,6 +1,6 @@
 {
   "name": "@betsys-eslint/eslint-plugin-angular-template-spacing",
-  "version": "2.0.0",
+  "version": "3.0.0-alpha.0",
   "license": "MIT",
   "author": "Betsys, s.r.o. <code@betsys.com>",
   "description": "Plugin that offers spacing possibilities in Angular's templates using ESLint",
@@ -35,7 +35,7 @@
     "@angular-eslint/eslint-plugin-template": "^17.0.0",
     "@angular-eslint/template-parser": "^17.0.0",
     "@angular/compiler": "^17.0.0",
-    "@betsys-eslint/eslint-config-typescript": "^2.0.0",
+    "@betsys-eslint/eslint-config-typescript": "^3.0.0-alpha.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-typescript": "^8.4.0",

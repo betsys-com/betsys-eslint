@@ -1,6 +1,6 @@
 {
   "name": "@betsys-eslint/eslint-config-nestjs",
-  "version": "2.0.0",
+  "version": "3.0.0-alpha.0",
   "license": "MIT",
   "author": "Betsys, s.r.o. <code@betsys.com>",
   "description": "ESLint configuration used across the company for NestJS projects",
@@ -24,7 +24,7 @@
     "@betsys-eslint/eslint-config-typescript": "^2.0.0"
   },
   "devDependencies": {
-    "@betsys-eslint/eslint-config-typescript": "^2.0.0",
+    "@betsys-eslint/eslint-config-typescript": "^3.0.0-alpha.0",
     "@rollup/plugin-typescript": "^8.4.0",
     "@types/eslint": "^8.4.6",
     "@types/jest": "^29.0.0",

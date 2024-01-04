@@ -1,6 +1,6 @@
 {
   "name": "@betsys-eslint/eslint-config-typescript",
-  "version": "2.0.0",
+  "version": "3.0.0-alpha.0",
   "license": "MIT",
   "author": "Betsys, s.r.o. <code@betsys.com>",
   "description": "ESLint configuration used across the company for TypeScript-based projects",
