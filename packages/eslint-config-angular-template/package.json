@@ -1,6 +1,6 @@
 {
   "name": "@betsys-eslint/eslint-config-angular-template",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.1-alpha.0",
   "license": "MIT",
   "author": "Betsys, s.r.o. <code@betsys.com>",
   "description": "ESLint configuration used across the company for templates in Angular projects",
