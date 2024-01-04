@@ -21,7 +21,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@betsys-eslint/eslint-config-typescript": "^2.0.0"
+    "@betsys-eslint/eslint-config-typescript": "^3.0.0-alpha.0"
   },
   "devDependencies": {
     "@betsys-eslint/eslint-config-typescript": "^3.0.0-alpha.0",
