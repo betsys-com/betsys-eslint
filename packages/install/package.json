@@ -46,7 +46,7 @@
     "resolve-package-path": "^4.0.3"
   },
   "devDependencies": {
-    "@betsys-eslint/eslint-config-typescript": "^3.0.0-alpha.0",
+    "@betsys-eslint/eslint-config-typescript": "^3.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-typescript": "^8.4.0",
     "@types/jest": "^29.0.0",
