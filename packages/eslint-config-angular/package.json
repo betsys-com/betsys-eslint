@@ -1,6 +1,6 @@
 {
   "name": "@betsys-eslint/eslint-config-angular",
-  "version": "3.0.2-alpha.0",
+  "version": "3.0.0",
   "license": "MIT",
   "author": "Betsys, s.r.o. <code@betsys.com>",
   "description": "ESLint configuration used across the company for Angular projects",
