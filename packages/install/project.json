@@ -1,10 +1,9 @@
 {
-    "root": "packages/install",
+    "name": "install",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "packages/install/src",
     "projectType": "library",
     "build": {
-        "outputs": [
-            "dist"
-        ]
+        "outputs": ["dist"]
     }
 }

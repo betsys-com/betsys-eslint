@@ -1,10 +1,4 @@
 {
-    "root": "packages/eslint-config-nestjs",
-    "sourceRoot": "packages/eslint-config-nestjs/src",
-    "projectType": "library",
-    "build": {
-        "outputs": [
-            "dist"
-        ]
-    }
+    "name": "@betsys-eslint/eslint-config-angular",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json"
 }
